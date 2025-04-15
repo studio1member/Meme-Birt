@@ -23,6 +23,10 @@ public class Birt : MonoBehaviour
             Die = true;
             StartCoroutine(_Die());
         }
+        if(collision.gameObject.CompareTag("Point") && !Die)
+        {
+            Debug.Log("Add Point");
+        }
     }
     private IEnumerator _Die()
     {
